@@ -1,0 +1,11 @@
+pipeline{
+  agent any
+  stages{
+      stage('main'){
+          when {branch 'main'}
+          steps{
+              sh 'echo "hello world"'
+          }
+      }
+  }
+}
